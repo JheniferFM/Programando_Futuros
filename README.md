@@ -77,9 +77,9 @@ programando-futuros/
 
 ## 👥 Equipe de Desenvolvimento
 
-- **Integrante 1:** Nome — Desenvolvimento Frontend e Integração de APIs
-- **Integrante 2:** Nome — Análise de Requisitos e Testes
-- **Integrante 3:** Nome — Documentação e Design de Interface
+- **Integrante 1 e 2:** Jhenifer e Marco — Desenvolvimento Frontend e Integração de APIs
+- **Integrante 3:** Islayne — Análise de Requisitos e Testes
+- **Integrante 4:** Gabriel — Documentação e Design de Interface
 
 *(Substitua "Nome" pelos nomes reais da equipe e suas respectivas funções)*
 
