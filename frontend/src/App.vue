@@ -22,6 +22,8 @@ import About from './components/About.vue'
 import Areas from './components/Areas.vue'
 import DashboardPreview from './components/DashboardPreview.vue'
 import Footer from './components/Footer.vue'
+import CosmicLoading from './components/CosmicLoading.vue';
+
 
 
 export default {
