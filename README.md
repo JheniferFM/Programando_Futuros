@@ -1,6 +1,4 @@
 
----
-
 # 📚 Projeto Integrador III - Análise e Desenvolvimento de Sistemas (ADS)
 
 # 🌟 Programando Futuros
@@ -28,23 +26,34 @@ O projeto estimula a aplicação de habilidades em programação, análise de si
 ## 📋 Escopo e Requisitos do Projeto
 
 - **Tecnologias utilizadas**:
-  - Vue.js 3
-  - Vite
-  - GSAP
-  - Chart.js
-  - Vue Router
-  - JavaScript
-  - HTML5 / CSS3
+  - **Frontend**:
+    - Vue.js 3
+    - Vite
+    - GSAP
+    - Chart.js
+    - Vue Router
+    - JavaScript
+    - HTML5 / CSS3
+
+  - **Backend**:
+    - Go (Golang)
+    - (Futuro) Integração com Firebase ou PostgreSQL.
 
 - **Requisitos funcionais**:
-  - Página inicial apresentando o projeto e suas áreas de atuação.
-  - Sistema de login e cadastro de usuários.
-  - Dashboard de visualização de dados sociais.
-  - Responsividade para dispositivos móveis (Mobile First).
-  - Navegação entre páginas utilizando Vue Router.
+  - **Frontend**:
+    - Página inicial apresentando o projeto e suas áreas de atuação.
+    - Sistema de login e cadastro de usuários.
+    - Dashboard de visualização de dados sociais.
+    - Responsividade para dispositivos móveis (Mobile First).
+    - Navegação entre páginas utilizando Vue Router.
+
+  - **Backend**:
+    - API RESTful para interação com o frontend.
+    - Processamento de dados e integração com o banco de dados.
+    - Autenticação e autorização de usuários.
 
 - **Banco de dados**:
-  - (Futuro) Integração planejada com Firebase ou PostgreSQL.
+  - Integração planejada com Firebase ou PostgreSQL para armazenar dados de usuários e informações relevantes.
 
 - **Ferramentas de versionamento**:
   - Git e GitHub.
@@ -60,39 +69,44 @@ O projeto estimula a aplicação de habilidades em programação, análise de si
 
 ```bash
 programando-futuros/
-├── docs/                 # Documentação geral
-├── src/                  # Código-fonte do projeto
-│   ├── assets/           # Imagens, ícones e fontes
-│   ├── components/       # Componentes Vue reutilizáveis
-│   ├── router/           # Configurações de rotas
-│   ├── views/            # Páginas principais
-│   ├── App.vue           # Componente raiz
-│   └── main.js           # Ponto de entrada da aplicação
-├── public/               # Arquivos públicos
-├── tests/                # Scripts de teste (futuros)
-└── README.md             # Documentação do projeto
-```
+├── backend/               # Código-fonte do backend
+│   ├── cmd/               # Diretório contendo o arquivo principal da aplicação
+│   └── go.mod             # Dependências do Go
+├── docs/                  # Documentação geral
+├── src/                   # Código-fonte do frontend
+│   ├── assets/            # Imagens, ícones e fontes
+│   ├── components/        # Componentes Vue reutilizáveis
+│   ├── router/            # Configurações de rotas
+│   ├── views/             # Páginas principais
+│   ├── App.vue            # Componente raiz
+│   └── main.js            # Ponto de entrada da aplicação
+├── public/                # Arquivos públicos
+├── tests/                 # Scripts de teste (futuros)
+├── package.json           # Dependências do frontend
+├── README.md              # Documentação do projeto
+└── vite.config.js         # Configuração do Vite
+````
 
 ---
 
 ## 👥 Equipe de Desenvolvimento
 
-- **Integrante 1 e 2:** Jhenifer e Marco — Desenvolvimento Frontend e Integração de APIs
-- **Integrante 3:** Islayne — Análise de Requisitos e Testes
-- **Integrante 4:** Gabriel — Documentação e Design de Interface
+* **Integrante 1 e 2:** Jhenifer e Marco — Desenvolvimento Frontend e Integração de APIs
+* **Integrante 3:** Islayne — Análise de Requisitos e Testes
+* **Integrante 4:** Gabriel — Documentação e Design de Interface
 
-*(Substitua "Nome" pelos nomes reais da equipe e suas respectivas funções)*
+
 
 ---
 
 ## 📆 Cronograma de Atividades
 
-| Etapa                     | Data Inicial | Data Final   | Responsável |
-|----------------------------|--------------|--------------|-------------|
-| Planejamento e Definição   | dd/mm/yyyy    | dd/mm/yyyy    | Equipe       |
-| Desenvolvimento            | dd/mm/yyyy    | dd/mm/yyyy    | Equipe       |
-| Testes e Validação         | dd/mm/yyyy    | dd/mm/yyyy    | Equipe       |
-| Finalização e Apresentação | dd/mm/yyyy    | dd/mm/yyyy    | Equipe       |
+| Etapa                      | Data Inicial | Data Final | Responsável |
+| -------------------------- | ------------ | ---------- | ----------- |
+| Planejamento e Definição   | dd/mm/yyyy   | dd/mm/yyyy | Equipe      |
+| Desenvolvimento            | dd/mm/yyyy   | dd/mm/yyyy | Equipe      |
+| Testes e Validação         | dd/mm/yyyy   | dd/mm/yyyy | Equipe      |
+| Finalização e Apresentação | dd/mm/yyyy   | dd/mm/yyyy | Equipe      |
 
 *(Preencher as datas conforme o cronograma real do projeto)*
 
@@ -100,27 +114,54 @@ programando-futuros/
 
 ## 🛠️ Como Executar o Projeto
 
-1. **Clone o repositório:**
+### Para o Backend
+
+1. **Instale o Go em sua máquina** (caso não tenha):
+
+   * [Documentação Go](https://golang.org/doc/install)
+
+2. **Clone o repositório**:
+
    ```bash
    git clone https://github.com/seu-usuario/programando-futuros.git
    ```
 
-2. **Acesse o diretório do projeto:**
+3. **Acesse o diretório do backend**:
+
    ```bash
-   cd programando-futuros
+   cd programando-futuros/backend
    ```
 
-3. **Instale as dependências:**
+4. **Execute a aplicação backend**:
+
+   ```bash
+   go run cmd/main.go
+   ```
+
+5. O backend estará rodando e você poderá fazer requisições para a API do backend.
+
+### Para o Frontend
+
+1. **Acesse o diretório do frontend**:
+
+   ```bash
+   cd programando-futuros/frontend
+   ```
+
+2. **Instale as dependências**:
+
    ```bash
    npm install
    ```
 
-4. **Execute a aplicação:**
+3. **Execute a aplicação frontend**:
+
    ```bash
    npm run dev
    ```
 
-5. **Acesse no navegador:**
+4. **Acesse no navegador**:
+
    ```
    http://localhost:5173
    ```
@@ -129,27 +170,29 @@ programando-futuros/
 
 ## 🏆 Critérios de Avaliação
 
-- **Funcionalidade (4 pontos):** O projeto atende aos requisitos definidos?
-- **Documentação (3 pontos):** O código-fonte e a documentação são claros e bem estruturados?
-- **Criatividade (2 pontos):** A solução apresenta inovação e criatividade?
-- **Trabalho em equipe (1 ponto):** Demonstração de colaboração efetiva entre os membros.
+* **Funcionalidade (4 pontos):** O projeto atende aos requisitos definidos?
+* **Documentação (3 pontos):** O código-fonte e a documentação são claros e bem estruturados?
+* **Criatividade (2 pontos):** A solução apresenta inovação e criatividade?
+* **Trabalho em equipe (1 ponto):** Demonstração de colaboração efetiva entre os membros.
 
 ---
 
 ## ⚖️ Licença
 
-Este projeto está licenciado sob a licença **MIT**.  
+Este projeto está licenciado sob a licença **MIT**.
 Consulte o arquivo [LICENSE](LICENSE) para mais detalhes.
 
 ---
 
 ## 📚 Referências e Fontes
 
-- [Documentação Vue.js](https://vuejs.org/)
-- [Documentação Vite](https://vitejs.dev/)
-- [Documentação Chart.js](https://www.chartjs.org/)
-- [Documentação GSAP](https://greensock.com/gsap/)
-- [Documentação Vue Router](https://router.vuejs.org/)
+* [Documentação Vue.js](https://vuejs.org/)
+* [Documentação Vite](https://vitejs.dev/)
+* [Documentação Chart.js](https://www.chartjs.org/)
+* [Documentação GSAP](https://greensock.com/gsap/)
+* [Documentação Vue Router](https://router.vuejs.org/)
+* [Documentação Go](https://golang.org/doc/)
 
----
+```
+
 
