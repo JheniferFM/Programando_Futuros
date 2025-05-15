@@ -68,23 +68,29 @@ O projeto estimula a aplicação de habilidades em programação, análise de si
 ## 🗂️ Estrutura do Repositório
 
 ```bash
-programando-futuros/
-├── backend/               # Código-fonte do backend
-│   ├── cmd/               # Diretório contendo o arquivo principal da aplicação
-│   └── go.mod             # Dependências do Go
-├── docs/                  # Documentação geral
-├── src/                   # Código-fonte do frontend
-│   ├── assets/            # Imagens, ícones e fontes
-│   ├── components/        # Componentes Vue reutilizáveis
-│   ├── router/            # Configurações de rotas
-│   ├── views/             # Páginas principais
-│   ├── App.vue            # Componente raiz
-│   └── main.js            # Ponto de entrada da aplicação
-├── public/                # Arquivos públicos
-├── tests/                 # Scripts de teste (futuros)
-├── package.json           # Dependências do frontend
-├── README.md              # Documentação do projeto
-└── vite.config.js         # Configuração do Vite
+Programando_Futuros/
+├── backend/               # Código-fonte do backend em Go
+│   ├── cmd/               # Arquivo principal (main.go)
+│   └── go.mod             # Arquivo de dependências do Go
+├── frontend/              # Código-fonte do frontend (Vue + Vite)
+│   ├── public/            # Arquivos públicos (index.html, imagens)
+│   ├── src/               # Código principal da aplicação Vue
+│   │   ├── assets/        # Imagens, estilos e SVGs
+│   │   │   ├── images/    # Imagens do projeto
+│   │   │   └── styles/    # Estilos globais (CSS)
+│   │   ├── components/    # Componentes Vue reutilizáveis
+│   │   ├── router/        # Arquivo de configuração das rotas
+│   │   ├── views/         # Páginas principais (Home, Login, etc.)
+│   │   ├── App.vue        # Componente raiz da aplicação
+│   │   ├── main.js        # Ponto de entrada do Vue
+│   │   └── style.css      # Estilo global adicional
+│   ├── index.html         # HTML principal usado pelo Vite
+│   ├── package.json       # Dependências do projeto
+│   ├── package-lock.json  # Versões travadas das dependências
+│   ├── README.md          # Documentação do frontend
+│   └── vite.config.js     # Configuração do Vite
+├── README.md              # Documentação principal do repositório
+
 ````
 
 ---
