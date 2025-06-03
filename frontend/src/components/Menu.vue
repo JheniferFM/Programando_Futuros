@@ -11,10 +11,7 @@
         <li><router-link to="/contato" class="nav-item hover-glow">Entre em Contato</router-link></li>
         
         <!-- Áreas de Acesso -->
-        <li class="nav-dropdown">
-          <a class="nav-item hover-glow">
-            Áreas de Acesso <span class="dropdown-arrow">▼</span>
-          </a>
+        <li class="nav-dropdown">        
           <ul class="dropdown-menu">
             <li><router-link to="/aluno" class="dropdown-item">Área do Aluno</router-link></li>
             <li><router-link to="/voluntario" class="dropdown-item">Área do Voluntário</router-link></li>
@@ -235,7 +232,7 @@ export default {
 .dropdown-item {
   display: block;
   padding: 12px 20px;
-  color: var(--text-light);
+  color: #fff;
   text-decoration: none;
   transition: all 0.3s ease;
   border-bottom: 1px solid rgba(255, 255, 255, 0.05);
@@ -243,7 +240,7 @@ export default {
 
 .dropdown-item:hover {
   background: rgba(243, 156, 18, 0.1);
-  color: var(--stellar-orange);
+  color: #FFFFFF;
   padding-left: 25px;
 }
 

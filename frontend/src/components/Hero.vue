@@ -7,20 +7,19 @@
         <span class="title-word">Bem-vindo</span>
         <span class="title-word">ao</span>
         <span class="title-word">Programando</span>
-        <span class="title-word">Futuros</span>
+        <span class="title-word">Futuros!</span>
       </h2>
-      <p class="hero-subtitle">Conectando voluntários a escolas públicas para construir o futuro da educação tecnológica.</p>
+      <p class="hero-subtitle">Conectando voluntários para construir o futuro da educação tecnológica. 
+        O Projeto Integrador III visa consolidar os conhecimentos adquiridos pela turma de ADS através do desenvolvimento de uma solução prática e aplicável a um problema real. 
+        O projeto Programando Futuros é uma plataforma web voltada para o incentivo à educação tecnológica em escolas públicas, buscando transformar a realidade de estudantes por meio de oficinas de tecnologia.
+        O projeto estimula a aplicação de habilidades em programação, análise de sistemas e trabalho em equipe, promovendo a entrega de resultados concretos e socialmente relevantes.
+      </p>
       <div class="cta-buttons">
         <router-link to="/login" class="cta-btn primary-cta">Junte-se a Nós</router-link>
         <router-link to="/about" class="cta-btn secondary-cta">Saiba Mais</router-link>
       </div>
     </div>
-    <div class="scroll-indicator">
-      <div class="mouse">
-        <div class="scroller"></div>
-      </div>
-      <span>Explore mais</span>
-    </div>
+
   </section>
 </template>
 
@@ -151,7 +150,7 @@ export default {
   line-height: 1.2;
   font-family: 'Orbitron', sans-serif;
   text-transform: uppercase;
-  background: linear-gradient(45deg, #fff 30%, #4A90E2 70%);
+  background: linear-gradient(45deg, #fff 30%, #4a6de2 70%);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -164,7 +163,7 @@ export default {
 }
 
 .hero-subtitle {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   color: rgba(255, 255, 255, 0.9);
   margin-bottom: 3rem;
   max-width: 700px;
